@@ -1,15 +1,15 @@
 # Configuration for request-info - https://github.com/behaviorbot/request-info
 
 # *Required* Comment to reply with
-requestInfoReplyComment: >
-  We would appreciate it if you could provide us with more info about this issue/pull request!\n\n
+requestInfoReplyComment: |
+  We would appreciate it if you could provide us with more info about this issue/pull request!
 
-  Please, add for:\n
+  Please, add for:
 
   Bug report: steps to reproduce,
   Feature request: expected behavior in details,
   Question: question details,
-  Pull request: behavior with your changes.\n
+  Pull request: behavior with your changes.
 
   Thanks.
 
