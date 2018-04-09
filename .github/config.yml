@@ -10,10 +10,10 @@ requestInfoReplyComment: |
 
   Please, add **for**:
 
-      **Bug report**: steps to reproduce,
-      Feature request: expected behavior in details,
-      Question: question details,
-      Pull request: behavior with your changes.
+      *Bug report*: steps to reproduce,
+      *Feature request*: expected behavior in details,
+      *Question*: details,
+      *Pull request*: behavior with your changes.
 
   Thanks.
 
