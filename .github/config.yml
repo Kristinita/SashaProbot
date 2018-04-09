@@ -1,3 +1,7 @@
+# Literal style for multiline messages:
+# https://yaml-multiline.info/
+# https://stackoverflow.com/a/21699210/5951529
+
 # Configuration for request-info - https://github.com/behaviorbot/request-info
 
 # *Required* Comment to reply with
@@ -6,10 +10,10 @@ requestInfoReplyComment: |
 
   Please, add for:
 
-  Bug report: steps to reproduce,
-  Feature request: expected behavior in details,
-  Question: question details,
-  Pull request: behavior with your changes.
+      Bug report: steps to reproduce,
+      Feature request: expected behavior in details,
+      Question: question details,
+      Pull request: behavior with your changes.
 
   Thanks.
 
