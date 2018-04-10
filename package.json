@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "devDependencies": {
+    "@commitlint/prompt": "^6.1.3"
+  }
+}

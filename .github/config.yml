@@ -2,7 +2,11 @@
 # https://yaml-multiline.info/
 # https://stackoverflow.com/a/21699210/5951529
 
-# Configuration for request-info - https://probot.github.io/apps/request-info/
+################
+# Request Info #
+################
+# Warns, if blank message in issue or pull request:
+# https://probot.github.io/apps/request-info/
 
 # *Required* Comment to reply with
 requestInfoReplyComment: |
@@ -19,6 +23,9 @@ requestInfoReplyComment: |
 
 # *OPTIONAL* default titles to check against for lack of descriptiveness
 # MUST BE ALL LOWERCASE
+# If issue/pull request head as value of “requestInfoDefaultTitles” keys,
+# Request Info will works even if message not blank:
+# https://github.com/Kristinita/SashaProbot/issues/12
 requestInfoDefaultTitles:
   - update readme.md
   - updates
@@ -27,13 +34,22 @@ requestInfoDefaultTitles:
 requestInfoLabelToAdd: needs-more-info
 
 
-
-# Configuration for sentiment-bot — https://probot.github.io/apps/sentiment-bot/
+#################
+# Sentiment Bot #
+#################
+# Bot, that warns, if toxic message:
+# https://probot.github.io/apps/sentiment-bot/
+# https://www.perspectiveapi.com
+# https://github.com/conversationai/perspectiveapi/blob/master/api_reference.md
 
 # *Required* toxicity threshold between 0 and .99 with the higher numbers being the most toxic
 # Anything higher than this threshold will be marked as toxic and commented on
+# If 0.001, bot can marked non-toxic messages, else .99, bot marked minimum toxic messages:
+# .7 is optimal:
+# https://github.com/behaviorbot/sentiment-bot/issues/24
 sentimentBotToxicityThreshold: .1
 
 # *Required* Comment to reply with
 sentimentBotReplyComment: >
+  Possibly, you message not correspond code of conduct of this repository.
   Please be sure to review the code of conduct and be respectful of other users.
